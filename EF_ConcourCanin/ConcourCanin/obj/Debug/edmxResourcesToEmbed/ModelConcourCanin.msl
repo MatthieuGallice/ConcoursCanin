@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ConcoursCaninModelStoreContainer" CdmEntityContainer="ConcoursCaninEntities">
+    <EntitySetMapping Name="BATARDs">
+      <EntityTypeMapping TypeName="ConcoursCaninModel.BATARD">
+        <MappingFragment StoreEntitySet="BATARD">
+          <ScalarProperty Name="codechien" ColumnName="codechien" />
+          <ScalarProperty Name="codeproprietaire" ColumnName="codeproprietaire" />
+          <ScalarProperty Name="caracteristiques" ColumnName="caracteristiques" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CHIENs">
+      <EntityTypeMapping TypeName="ConcoursCaninModel.CHIEN">
+        <MappingFragment StoreEntitySet="CHIEN">
+          <ScalarProperty Name="codechien" ColumnName="codechien" />
+          <ScalarProperty Name="codeproprietaire" ColumnName="codeproprietaire" />
+          <ScalarProperty Name="ddnchien" ColumnName="ddnchien" />
+          <ScalarProperty Name="nomchien" ColumnName="nomchien" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CONCOURS">
+      <EntityTypeMapping TypeName="ConcoursCaninModel.CONCOUR">
+        <MappingFragment StoreEntitySet="CONCOURS">
+          <ScalarProperty Name="codeconcours" ColumnName="codeconcours" />
+          <ScalarProperty Name="adresseconcours" ColumnName="adresseconcours" />
+          <ScalarProperty Name="cpconcours" ColumnName="cpconcours" />
+          <ScalarProperty Name="dateconcours" ColumnName="dateconcours" />
+          <ScalarProperty Name="salleconcours" ColumnName="salleconcours" />
+          <ScalarProperty Name="villeconcours" ColumnName="villeconcours" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DERACEs">
+      <EntityTypeMapping TypeName="ConcoursCaninModel.DERACE">
+        <MappingFragment StoreEntitySet="DERACE">
+          <ScalarProperty Name="codechien" ColumnName="codechien" />
+          <ScalarProperty Name="codeproprietaire" ColumnName="codeproprietaire" />
+          <ScalarProperty Name="race" ColumnName="race" />
+          <ScalarProperty Name="robe" ColumnName="robe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PARTICIPEs">
+      <EntityTypeMapping TypeName="ConcoursCaninModel.PARTICIPE">
+        <MappingFragment StoreEntitySet="PARTICIPE">
+          <ScalarProperty Name="codeproprietaire" ColumnName="codeproprietaire" />
+          <ScalarProperty Name="codechien" ColumnName="codechien" />
+          <ScalarProperty Name="codeconcours" ColumnName="codeconcours" />
+          <ScalarProperty Name="note" ColumnName="note" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PROPRIETAIREs">
+      <EntityTypeMapping TypeName="ConcoursCaninModel.PROPRIETAIRE">
+        <MappingFragment StoreEntitySet="PROPRIETAIRE">
+          <ScalarProperty Name="codeproprietaire" ColumnName="codeproprietaire" />
+          <ScalarProperty Name="adresseproprietaire" ColumnName="adresseproprietaire" />
+          <ScalarProperty Name="cpproprietaire" ColumnName="cpproprietaire" />
+          <ScalarProperty Name="nomproprietaire" ColumnName="nomproprietaire" />
+          <ScalarProperty Name="prenomproprietaire" ColumnName="prenomproprietaire" />
+          <ScalarProperty Name="villeproprietaire" ColumnName="villeproprietaire" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VUEBATARDs">
+      <EntityTypeMapping TypeName="ConcoursCaninModel.VUEBATARD">
+        <MappingFragment StoreEntitySet="VUEBATARD">
+          <ScalarProperty Name="codechien" ColumnName="codechien" />
+          <ScalarProperty Name="codeproprietaire" ColumnName="codeproprietaire" />
+          <ScalarProperty Name="ddnchien" ColumnName="ddnchien" />
+          <ScalarProperty Name="nomchien" ColumnName="nomchien" />
+          <ScalarProperty Name="caracteristiques" ColumnName="caracteristiques" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VUERACEs">
+      <EntityTypeMapping TypeName="ConcoursCaninModel.VUERACE">
+        <MappingFragment StoreEntitySet="VUERACE">
+          <ScalarProperty Name="codechien" ColumnName="codechien" />
+          <ScalarProperty Name="codeproprietaire" ColumnName="codeproprietaire" />
+          <ScalarProperty Name="ddnchien" ColumnName="ddnchien" />
+          <ScalarProperty Name="nomchien" ColumnName="nomchien" />
+          <ScalarProperty Name="race" ColumnName="race" />
+          <ScalarProperty Name="robe" ColumnName="robe" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="CountQuery" FunctionName="ConcoursCaninModel.Store.CountQuery" />
+    <FunctionImportMapping FunctionImportName="pCONCOURS_INSERT" FunctionName="ConcoursCaninModel.Store.pCONCOURS_INSERT" />
+    <FunctionImportMapping FunctionImportName="pPARTICIPE_INSERT" FunctionName="ConcoursCaninModel.Store.pPARTICIPE_INSERT" />
+    <FunctionImportMapping FunctionImportName="pPROPRIETAIRE_INSERT" FunctionName="ConcoursCaninModel.Store.pPROPRIETAIRE_INSERT" />
+  </EntityContainerMapping>
+</Mapping>

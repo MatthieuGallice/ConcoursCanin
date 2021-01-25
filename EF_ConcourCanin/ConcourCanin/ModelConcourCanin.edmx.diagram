@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="80cd0ad48028449987243717aeddef27" Name="Diagram1">
+        <EntityTypeShape EntityType="ConcoursCaninModel.BATARD" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConcoursCaninModel.CHIEN" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConcoursCaninModel.CONCOUR" Width="1.5" PointX="3" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConcoursCaninModel.DERACE" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConcoursCaninModel.PARTICIPE" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConcoursCaninModel.PROPRIETAIRE" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConcoursCaninModel.VUEBATARD" Width="1.5" PointX="7.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ConcoursCaninModel.VUERACE" Width="1.5" PointX="5.75" PointY="7.75" IsExpanded="true" />
+        <AssociationConnector Association="ConcoursCaninModel.FK__CHIEN__codepropr__00551192" ManuallyRouted="false" />
+        <AssociationConnector Association="ConcoursCaninModel.FK_PARTICIPE_CHIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="ConcoursCaninModel.FK_PARTICIPE_CONCOURS" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
